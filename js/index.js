@@ -13,6 +13,7 @@ a_app.controller("mainCtrl", function($scope) {
 var app = {
 	init: function() {
 		this.bindEvents();
+		console.log("ciomka");
 	},
 	bindEvents: function() {
 		document.addEventListener("deviceready", this.onDeviceReady, false);

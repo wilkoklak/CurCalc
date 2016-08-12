@@ -6,7 +6,7 @@
         version     = "1.1.5" >
     <!-- INFO -->
     <name>CurCalc</name>
-
+		<content src="index.html"></content>
     <description>
         Prosty przelicznik walut
     </description>
