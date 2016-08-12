@@ -10,7 +10,7 @@
 		<author href="http://thelostworld.cba.pl/" email="tlwk@gmx.com">Artur Boryś</author>
 		<feature name="http://api.phonegap.com/1.0/file"/>
 		<feature name="http://api.phonegap.com/1.0/network"/>
-<preference name="phonegap-version" value="cli-6.1.0" />
+<preference name="phonegap-version" value="cli-6.3.0" />
 <preference name="android-build-tool" value="gradle" />
 <preference name="orientation" value="default" />
 <preference name="fullscreen" value="false" />
@@ -18,7 +18,6 @@
 <preference name="webviewbounce" value="true" />
 <preference name="prerendered-icon" value="false" />
 <preference name="stay-in-webview" value="true" />
-<preference name="ios-statusbarstyle" value="default" />
 <preference name="detect-data-types" value="true" />
 <preference name="exit-on-suspend" value="true" />
 <preference name="show-splash-screen-spinner" value="true" />
@@ -43,8 +42,6 @@
 <preference name="DisallowOverscroll" value="true" />
 <preference name="LoadingDialog" value="," />
 <preference name="LoadUrlTimeoutValue" value="null" />
-		<platform name="ios">
-		</platform>
 		<platform name="android">
 		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_36.png" qualifier="ldpi" />
 		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_48.png" qualifier="mdpi" />
@@ -52,8 +49,6 @@
 		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_96.png" qualifier="xhdpi" />
 		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_144.png" qualifier="xxhdpi" />
 		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_192.png" qualifier="xxxhdpi" />
-		</platform>
-		<platform name="winphone">
 		</platform>
 		 <icon src="icon.png" />
 <access origin="http://*.nbp.pl/"/>
