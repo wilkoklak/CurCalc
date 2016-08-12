@@ -28,4 +28,5 @@
     <!-- PLUGINS -->
     <plugin name="cordova-plugin-whitelist"/>
     <plugin name="cordova-plugin-network-information"/>
+    <plugin name="cordova-plugin-geolocation"/>
 	</widget>
