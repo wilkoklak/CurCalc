@@ -51,5 +51,8 @@
 		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_192.png" qualifier="xxxhdpi" />
 		</platform>
 		 <icon src="icon.png" />
+		 <plugin name="cordova-plugin-whitelist" version="1"/>
+     <plugin name="org.apache.cordova.statusbar"/>
+     <plugin name="org.apache.cordova.network-information"/>
 <access origin="http://*.nbp.pl/"/>
 </widget>
