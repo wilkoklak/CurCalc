@@ -1,26 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-	<widget xmlns = "http://www.w3.org/ns/widgets"
-		xmlns:gap = "http://phonegap.com/ns/1.0"
-		xmlns:android = "http://schemas.android.com/apk/res/android"
-		id        = "free.curcalc"
-		versionCode=""
-		version   = "1.0.0">
-		<name>CurCalc</name>
-		<description>Aplikacja do przeliczania walut</description>
-		<author href="http://thelostworld.cba.pl/" email="tlwk@gmx.com">Artur Boryś</author>
-<preference name="orientation" value="default" />
-<preference name="fullscreen" value="false" />
-<preference name="target-device" value="universal" />
-		<platform name="android">
-		<icon src="icons/icon_36.png" qualifier="ldpi" />
-		<icon src="icons/icon_48.png" qualifier="mdpi" />
-		<icon src="icons/icon_72.png" qualifier="hdpi" />
-		<icon src="icons/icon_96.png" qualifier="xhdpi" />
-		<icon src="icons/icon_144.png" qualifier="xxhdpi" />
-		<icon src="icons/icon_192.png" qualifier="xxxhdpi" />
-		</platform>
-		 <icon src="icon.png" />
-		 <plugin name="cordova-plugin-whitelist" version="1"/>
-     <plugin name="cordova-plugin-network-information"/>
-<access origin="http://*.nbp.pl/"/>
-</widget>
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "curcalc.free"
+        versionCode = "7"
+        version     = "1.1.5" >
+    <!-- INFO -->
+    <name>CurCalc</name>
+
+    <description>
+        Prosty przelicznik walut
+    </description>
+
+    <author href="http://thelostworld.cba.pl/" email="kontakt@thelostworld.cba.pl">
+        Artur Boryś
+    </author>
+
+    <!-- PREFS -->
+    <preference name="orientation" value="default" />
+    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="android-installLocation"    value="auto" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <access origin="*"/>
+    <allow-intent href="https://api.nbp.pl"/>
+
+    <!-- PLUGINS -->
+    <plugin name="cordova-plugin-whitelist"/>
+    <plugin name="cordova-plugin-network-information"/>
+	</widget>
