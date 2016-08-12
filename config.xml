@@ -8,22 +8,19 @@
 		<name>CurCalc</name>
 		<description>Aplikacja do przeliczania walut</description>
 		<author href="http://thelostworld.cba.pl/" email="tlwk@gmx.com">Artur Boryś</author>
-<preference name="phonegap-version" value="cli-6.3.0" />
-<preference name="android-build-tool" value="gradle" />
 <preference name="orientation" value="default" />
 <preference name="fullscreen" value="false" />
 <preference name="target-device" value="universal" />
 		<platform name="android">
-		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_36.png" qualifier="ldpi" />
-		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_48.png" qualifier="mdpi" />
-		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_72.png" qualifier="hdpi" />
-		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_96.png" qualifier="xhdpi" />
-		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_144.png" qualifier="xxhdpi" />
-		<icon src="file://F:\sys\Dokumenty\GitHub\CurCalc\icons\icon_192.png" qualifier="xxxhdpi" />
+		<icon src="icons/icon_36.png" qualifier="ldpi" />
+		<icon src="icons/icon_48.png" qualifier="mdpi" />
+		<icon src="icons/icon_72.png" qualifier="hdpi" />
+		<icon src="icons/icon_96.png" qualifier="xhdpi" />
+		<icon src="icons/icon_144.png" qualifier="xxhdpi" />
+		<icon src="icons/icon_192.png" qualifier="xxxhdpi" />
 		</platform>
 		 <icon src="icon.png" />
 		 <plugin name="cordova-plugin-whitelist" version="1"/>
-     <plugin name="org.apache.cordova.statusbar"/>
-     <plugin name="org.apache.cordova.network-information"/>
+     <plugin name="cordova-plugin-network-information"/>
 <access origin="http://*.nbp.pl/"/>
 </widget>
