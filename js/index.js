@@ -9,6 +9,6 @@ var app = {
 		document.addEventListener("deviceready", this.onDeviceReady(), false);
 	},
 	onDeviceReady: function() {
-		vars.test = device.platform;
+		alert(device.platform);
 	}
 }
