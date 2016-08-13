@@ -9,10 +9,6 @@ var app = {
 		document.addEventListener("deviceready", this.onDeviceReady(), false);
 	},
 	onDeviceReady: function() {
-		vars.test = "aaa";
-		window.addEventListener("batterystatus", onBatteryStatus, false);
-		function onBatteryStatus(status) {
-			alert(status.level);
-		}
+		vars.test = device.platform;
 	}
 }
