@@ -20,5 +20,5 @@
 	  <preference name="fullscreen" value="false" />
 	</platform>
 	<plugin name="cordova-plugin-whitelist"/>
-	<plugin name="org.crosswalk.engine" spec="1.3.0" source="pgb" />
+	<!-- <plugin name="org.crosswalk.engine" spec="1.3.0" source="pgb" /> -->
 </widget>

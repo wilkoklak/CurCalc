@@ -3,6 +3,5 @@ a_app.controller("mainCtrl", function($scope, $route, $http) {
 	$http.get("http://api.nbp.pl/api/exchangerates/tables/A?format=json")
 	.then(function(response) {
 		$scope.waluty = response.data;
-		console.log($scope.waluty[0].code);
 	});
 });
