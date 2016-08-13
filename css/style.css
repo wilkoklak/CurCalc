@@ -36,7 +36,7 @@ body {
 	display: inline;
 }
 .side-nav {
-	width: 400px;
+	width: 90%;
 	position: fixed;
 	top: 0;
 	background: #f2f2f2;
