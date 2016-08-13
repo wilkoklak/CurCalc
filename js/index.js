@@ -11,7 +11,7 @@ var app = {
 	onDeviceReady: function() {
 		vars.test = "aaa";
 		function onBatteryStatus(status) {
-			vars.level = status.level;
+			alert(status.level);
 		}
 		window.addEventListener("batterystatus", onBatteryStatus, false);
 	}
