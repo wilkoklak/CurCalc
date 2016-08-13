@@ -26,6 +26,5 @@
 	  <preference name="android-installLocation" value="auto" />
 	  <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
 	</platform>
-	<plugin name="cordova-plugin-network-information"/>
 	<plugin name="cordova-plugin-battery-status"/>
 </widget>
