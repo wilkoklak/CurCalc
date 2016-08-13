@@ -18,5 +18,5 @@
 	  <preference name="orientation" value="portrait" />
 	  <preference name="fullscreen" value="false" />
 	</platform>
-	<plugin name="cordova-plugin-battery-status"/>
+	<plugin name="cordova-plugin-geolocation"/>
 </widget>
