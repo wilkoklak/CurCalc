@@ -3,7 +3,7 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.phonegap.example"
     versionCode = "10"
-    version     = "1.0.0" >
+    version     = "1.0.1" >
 
   <name>PhoneGap Example</name>
   <description>
@@ -19,4 +19,5 @@
 	  <preference name="fullscreen" value="false" />
 	</platform>
 	<plugin name="cordova-plugin-geolocation"/>
+	<plugin name="cordova-plugin-file"/>
 </widget>
