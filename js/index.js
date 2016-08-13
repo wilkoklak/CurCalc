@@ -18,7 +18,13 @@ a_app.run(function($rootScope) {
 	$rootScope.menu_items = [
 		{
 			icon: "home",
-			text: "Strona główna"
+			text: "Strona główna",
+			href: "#/"
+		},
+		{
+			icon: "info",
+			text: "Info",
+			href: "#/info"
 		}
 	]
 })
