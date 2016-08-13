@@ -1,5 +1,5 @@
 <ul>
-	<li ng-repeat="x in menu_items" ng-class="x.active">
+	<li ng-repeat="x in menu_items" ng-class="x.active" ng-click="showSideNav()">
 		<a href="{{x.href}}">
 			<i class="material-icons">{{ x.icon }}</i>
 			<span>{{ x.text }}</span>
