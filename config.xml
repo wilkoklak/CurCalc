@@ -12,6 +12,7 @@
   <author href="https://build.phonegap.com" email="support@phonegap.com">
       wildabeast
   </author>
+	<access origin="https://api.nbp.pl/"/>
 	<platform name="android">
 	  <!-- all platforms -->
 	  <preference name="phonegap-version" value="cli-6.3.0" />
@@ -19,4 +20,5 @@
 	  <preference name="fullscreen" value="false" />
 	</platform>
 	<plugin name="cordova-plugin-device"/>
+	<plugin name="cordova-plugin-whitelist"/>
 </widget>
