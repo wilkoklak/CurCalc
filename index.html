@@ -4,10 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0"/>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="css/style.css">
- 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body ng-app="mainApp">
+
+<div class="side-nav"></div>
 
 <div ng-view>
 </div>
@@ -17,6 +19,7 @@
 <script src="js/index.js"></script>
 <script src="js/controllers/mainCtrl.js"></script>
 <script src="js/routes.js"></script>
+<script src="js/directives.js"></script>
 <script>
 	app.init();
 </script>

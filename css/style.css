@@ -26,7 +26,7 @@ body {
 	color: #f2f2f2;
 	position: fixed;
 	top: 0;
-	padding: 0 16px;
+	padding: 0 24px;
 }
 .header h1 {
 	font-size: 24px;
@@ -35,6 +35,33 @@ body {
 	left: 72px;
 	display: inline;
 }
-.header .material-icons {
+.side-nav {
+	width: 400px;
+	position: fixed;
+	top: 0;
+	background: #f2f2f2;
+	box-shadow: 4px 0 4px rgba(0, 0, 0, 0.73);
+	height: 100%;
+	z-index: 100;
+	padding-top: 56px;
+}
+.side-nav li {
+	font-size: 14px;
+	line-height: 48px;
+	position: relative;
+	color: rgba(0, 0, 0, 0.87);
+	font-weight: 600;
+}
+.side-nav .material-icons {
+	color: rgba(0, 0, 0, 0.54);
+	vertical-align: middle;
+	position: absolute;
+	left: 16px;
+}
+.side-nav li span {
+	position: absolute;
+	left: 72px;
+}
+.material-icons {
 	line-height: inherit;
 }
