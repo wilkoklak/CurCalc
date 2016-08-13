@@ -16,7 +16,7 @@
 	  <!-- all platforms -->
 	  <preference name="phonegap-version" value="cli-6.3.0" />
 	  <preference name="orientation" value="portrait" />
-	  <preference name="fullscreen" value="true" />
+	  <preference name="fullscreen" value="false" />
 
 	  <!-- Android only -->
 	  <preference name="android-build-tool" value="ant|gradle" />
@@ -26,5 +26,6 @@
 	  <preference name="android-installLocation" value="auto" />
 	  <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
 	</platform>
-	<plugin name="cordova-plugin-geolocation"/>
+	<plugin name="cordova-plugin-network-information"/>
+	<plugin name="cordova-plugin-battery-status"/>
 </widget>

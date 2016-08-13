@@ -9,21 +9,10 @@ var app = {
 		document.addEventListener("deviceready", this.onDeviceReady(), false);
 	},
 	onDeviceReady: function() {
-		a_app.test = "aaa";
-		function onSuccess(position) {
-			vars.coords = position.coords;
-			vars.timestamp = position.timestamp;
-		}
-		function onError(err) {
-			vars.error = err.message;
-		}
-		var watch = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
+		vars.test = "aaa";
+		window.addEventListener("batterystatus", this.onBatteryStatus(), false);
 	},
-	onSuccess: function(position) {
-		vars.coords = position.coords;
-		vars.timestamp = position.timestamp;
-	},
-	onError: function(err) {
-		vars.error = err.message;
+	onBatteryStatus: function(status) {
+		vars.level = status.level;
 	}
 }
