@@ -10,5 +10,13 @@ var app = {
 	},
 	onDeviceReady: function() {
 		a_app.test = "aaa";
+		var watch = navigator.geolocation.watchPosition(this.onSuccess, this.onError);
+	},
+	onSuccess: function(position) {
+		vars.coords = position.coords;
+		vars.timestamp = position.timestamp;
+	},
+	onError: function(err) {
+		vars.error = err.message;
 	}
 }
