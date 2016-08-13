@@ -6,7 +6,7 @@ var app = {
 		console.log("ciomka");
 	},
 	bindEvents: function() {
-		document.addEventListener("deviceready", this.onDeviceReady(), false);
+		document.addEventListener("deviceready", this.onDeviceReady, false);
 	},
 	onDeviceReady: function() {
 		alert(device.platform);
