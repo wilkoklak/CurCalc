@@ -12,7 +12,7 @@
   <author href="https://build.phonegap.com" email="support@phonegap.com">
       wildabeast
   </author>
-	<access origin="http://nbp.pl" subdomains="true"/>
+	<access origin="http://api.nbp.pl/*" />
 	<platform name="android">
 	  <!-- all platforms -->
 	  <preference name="phonegap-version" value="cli-6.3.0" />
