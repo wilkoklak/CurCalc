@@ -19,7 +19,8 @@
 	  <preference name="orientation" value="portrait" />
 	  <preference name="fullscreen" value="false" />
 	</platform>
-	<preference name="StatusBarBackgroundColor" value="#1565c0" />
+	<preference name="StatusBarOverlaysWebView" value="true" />
+	<preference name="StatusBarBackgroundColor" value="#1565C0" />
 	<plugin name="cordova-plugin-whitelist"/>
 	<plugin name="org.crosswalk.engine" spec="1.3.0" source="pgb" />
 	<plugin name="org.apache.cordova.statusbar" spec="0.1.4" source="pgb" />
