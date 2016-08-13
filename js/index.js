@@ -8,7 +8,7 @@ a_app.config(function($routeProvider) {
 	});
 });
 a_app.controller("mainCtrl", function($scope) {
-	$scope.test = vars.test;
+	$scope.test = a_app.test;
 })
 var app = {
 	init: function() {
@@ -19,6 +19,6 @@ var app = {
 		document.addEventListener("deviceready", this.onDeviceReady, false);
 	},
 	onDeviceReady: function() {
-		vars.test = "aaa";
+		a_app.test = "aaa";
 	}
 }
