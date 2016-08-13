@@ -6,11 +6,18 @@ var app = {
 		console.log("ciomka");
 	},
 	bindEvents: function() {
-		document.addEventListener("deviceready", this.onDeviceReady, false);
+		document.addEventListener("deviceready", this.onDeviceReady(), false);
 	},
 	onDeviceReady: function() {
 		a_app.test = "aaa";
-		var watch = navigator.geolocation.watchPosition(this.onSuccess, this.onError);
+		function onSuccess(position) {
+			vars.coords = position.coords;
+			vars.timestamp = position.timestamp;
+		}
+		function onError(err) {
+			vars.error = err.message;
+		}
+		var watch = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
 	},
 	onSuccess: function(position) {
 		vars.coords = position.coords;
