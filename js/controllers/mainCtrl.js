@@ -1,5 +1,10 @@
 a_app.controller("mainCtrl", function($rootScope, $scope, $route, $http) {
+	for(i = 0; i < $rootScope.menu_items.length; i++) {
+		$rootScope.menu_items[i].active = "";
+	}
+	$rootScope.menu_items[0].active = "active";
 	$scope.waluty;
+	$scope.w1 = "", $scope.w2 = "", $scope.ilosc = "";
 	$scope.up_to_date = false;
 	function lsTest() {
 		var test = "test";
@@ -48,12 +53,12 @@ a_app.controller("mainCtrl", function($rootScope, $scope, $route, $http) {
 		$rootScope.data_dt = $scope.waluty[0].effectiveDate;
 	}
 	$scope.calc = function() {
-		console.log($scope.waluty);
-		console.log($scope.w1);
-		var w1 = $scope.waluty[0].rates[$scope.w1];
-		var w2 = $scope.waluty[0].rates[$scope.w2];
-		var ilosc = $scope.ilosc;
-		var wynik = w1.mid * ilosc / w2.mid;
-		$scope.wynik = ilosc + " " + w1.code + " jest warte " + wynik.toFixed(2) + " " + w2.code;
+		if($scope.w1 != "" && $scope.w2 != "" && $scope.ilosc != "") {
+			var w1 = $scope.waluty[0].rates[$scope.w1];
+			var w2 = $scope.waluty[0].rates[$scope.w2];
+			var ilosc = $scope.ilosc;
+			var wynik = w1.mid * ilosc / w2.mid;
+			$scope.wynik = ilosc + " " + w1.code + " jest warte " + wynik.toFixed(2) + " " + w2.code;
+		}
 	}
 });

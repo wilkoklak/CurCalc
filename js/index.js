@@ -19,12 +19,14 @@ a_app.run(function($rootScope) {
 		{
 			icon: "home",
 			text: "Strona główna",
-			href: "#/"
+			href: "#/",
+			active: true
 		},
 		{
 			icon: "info",
 			text: "Info",
-			href: "#/info"
+			href: "#/info",
+			active: false
 		}
 	];
 	$rootScope.app_version = "1.0.0";

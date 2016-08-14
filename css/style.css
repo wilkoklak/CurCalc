@@ -109,6 +109,12 @@ body {
 	color: rgba(0, 0, 0, 0.87);
 	font-weight: 500;
 }
+.side-nav li.active a {
+	background: rgba(0, 0, 0, 0.1);
+}
+.side-nav li.active, .side-nav li.active i {
+	color: #2196f3;
+}
 .side-nav li a {
 	display: block;
 	color: inherit;
@@ -202,4 +208,11 @@ select:focus, input:focus, textarea:focus {
 	color: rgba(0, 0, 0, 0.87);
 	line-height: 1.1em;
 	margin-bottom: 0.5em;
+}
+.content a {
+	color: #0099ff;
+	text-decoration: none;
+}
+.content a:hover {
+	color: #33adff;
 }

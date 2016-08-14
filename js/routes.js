@@ -5,6 +5,7 @@ a_app.config(function($routeProvider) {
 		controller: "mainCtrl"
 	})
 	.when("/info", {
-		templateUrl: "templates/info.htm"
+		templateUrl: "templates/info.htm",
+		controller: "infoCtrl"
 	});
 });
