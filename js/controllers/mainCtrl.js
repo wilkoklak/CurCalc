@@ -25,7 +25,7 @@ a_app.controller("mainCtrl", function($rootScope, $scope, $route, $http) {
 				if(now_day - old_day == 0) {
 					$scope.up_to_date = true;
 				} else {
-					if(now_day - old_day == 1 && (now.getDay() == 0 || now.getDay() == 6)) {
+					if(now_day - old_day <= 2 && now.getDay() == 0 || now.getDay() == 6) {
 						$scope.up_to_date = true;
 					} else {
 						$scope.up_to_date = false;
@@ -40,8 +40,18 @@ a_app.controller("mainCtrl", function($rootScope, $scope, $route, $http) {
 		$http.get("http://api.nbp.pl/api/exchangerates/tables/A?format=json")
 		.then(function(response) {
 			$scope.waluty = response.data;
-
 			window.localStorage.waluty = JSON.stringify($scope.waluty);
 		});
+	} else {
+		$scope.waluty = JSON.parse(window.localStorage.waluty);
+	}
+	$scope.calc = function() {
+		console.log($scope.waluty);
+		console.log($scope.w1);
+		var w1 = $scope.waluty[0].rates[$scope.w1];
+		var w2 = $scope.waluty[0].rates[$scope.w2];
+		var ilosc = $scope.ilosc;
+		var wynik = w1.mid * ilosc / w2.mid;
+		$scope.wynik = ilosc + " " + w1.code + " jest warte " + wynik.toFixed(2) + " " + w2.code;
 	}
 });

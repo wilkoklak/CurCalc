@@ -4,6 +4,31 @@
 		<h1>CurCalc</h1>
 	</div>
 	<div class="content">
-		<button class="button">Przelicz</button>
+		<form name="calculator" action="javascript:void(0)">
+			<label for="w1">Z</label>
+			<div class="input_tile">
+				<select name="w1" ng-model="w1">
+					<option value="" selected="true">--- Wybierz walutę ---</option>
+					<option ng-repeat="x in waluty[0].rates" value="{{$index}}">{{ x.code }}</option>
+				</select>
+			</div>
+			<label for="w2">Na</label>
+			<div class="input_tile">
+				<select name="w2" ng-model="w2">
+					<option value="">---Wybierz walutę---</option>
+					<option ng-repeat="x in waluty[0].rates" value="{{$index}}">{{ x.code }}</option>
+				</select>
+			</div>
+			<label for="ilosc">Ilość</label>
+			<div class="input_tile">
+				<input type="number" name="ilosc" ng-model="ilosc"/>
+			</div>
+			<div class="text_center">
+				<button class="button" ng-click="calc()">Przelicz</button>
+			</div>
+		</form>
+		<p id="wynik">
+			{{ wynik }}
+		</p>
 	</div>
 </div>
