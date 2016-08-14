@@ -187,11 +187,12 @@ body {
 	float: left;
 	margin-bottom: 8px;
 }
-.input_tile_swap:nth-child(2) {
+.input_tile_swap:last-of-type {
+	width: calc(50% - 34px);
 	float: right;
 }
 .swap_button {
-	width: 20%;
+	width: 84px;
 	float: left;
 	text-align: center;
 	padding: 8px;
@@ -199,7 +200,7 @@ body {
 }
 .float_container {
 	overflow: auto;
-	padding: 16px 16px 0 16px;
+	padding: 16px 0 0 16px;
 	margin-bottom: 16px;
 	border-bottom: 1px solid #aaa;
 }
