@@ -27,9 +27,7 @@ a_app.run(function($rootScope) {
 			href: "#/info"
 		}
 	];
-	cordova.getAppVersion.getVersionNumber().then(function(version) {
-		$rootScope.app_version = version;
-	})
+	$rootScope.app_version = "1.0.0";
 })
 var app = {
 	init: function() {
@@ -39,6 +37,6 @@ var app = {
 		document.addEventListener("deviceready", this.onDeviceReady, false);
 	},
 	onDeviceReady: function() {
-		
+
 	}
 }
