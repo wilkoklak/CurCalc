@@ -55,6 +55,12 @@ body {
 	height: calc(100% - 56px);
 	padding: 16px;
 }
+.no_padding {
+	padding: 0;
+}
+.padding {
+	padding: 0 16px;
+}
 
 .dark {
 	position: fixed;
@@ -156,6 +162,10 @@ body {
 	padding: 0 16px;
 	transition: 1s;
 }
+.button_color {
+	background: #1e88e5;
+	color: #f2f2f2;
+}
 .button:hover {
 	background: rgba(0, 0, 0, 0.1);
 }
@@ -172,13 +182,42 @@ body {
 	padding: 8px 0 8px 0;
 	margin-bottom: 8px;
 }
+.input_tile_swap {
+	width: calc(50% - 50px);
+	float: left;
+	margin-bottom: 8px;
+}
+.input_tile_swap:nth-child(2) {
+	float: right;
+}
+.swap_button {
+	width: 20%;
+	float: left;
+	text-align: center;
+	padding: 8px;
+	color: #2196f3;
+}
+.float_container {
+	overflow: auto;
+	padding: 16px 16px 0 16px;
+	margin-bottom: 16px;
+	border-bottom: 1px solid #aaa;
+}
 label {
 	display: block;
 	margin-bottom: 8px;
 	padding: 0 8px;
 	color: rgba(0, 0, 0, 0.87);
 }
-select, input, textarea {
+select {
+	border: 0;
+	background: transparent;
+	width: 100%;
+	font-size: 16px;
+	padding: 8px;
+	outline: 0;
+}
+input, textarea {
 	border: 0;
 	background: transparent;
 	border-bottom: 2px solid #ddd;
@@ -188,7 +227,7 @@ select, input, textarea {
 	padding: 8px;
 	outline: 0;
 }
-select:focus, input:focus, textarea:focus {
+input:focus, textarea:focus {
 	border-bottom: 2px solid #1e88e5;
 }
 #wynik {

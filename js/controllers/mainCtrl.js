@@ -61,4 +61,9 @@ a_app.controller("mainCtrl", function($rootScope, $scope, $route, $http) {
 			$scope.wynik = ilosc + " " + w1.code + " jest warte " + wynik.toFixed(2) + " " + w2.code;
 		}
 	}
+	$scope.swap = function() {
+		var temp = $scope.w1;
+		$scope.w1 = $scope.w2;
+		$scope.w2 = temp;
+	}
 });
