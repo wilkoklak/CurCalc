@@ -40,10 +40,12 @@ a_app.controller("mainCtrl", function($rootScope, $scope, $route, $http) {
 		$http.get("http://api.nbp.pl/api/exchangerates/tables/A?format=json")
 		.then(function(response) {
 			$scope.waluty = response.data;
+			$rootScope.data_dt = $scope.waluty[0].effectiveDate;
 			window.localStorage.waluty = JSON.stringify($scope.waluty);
 		});
 	} else {
 		$scope.waluty = JSON.parse(window.localStorage.waluty);
+		$rootScope.data_dt = $scope.waluty[0].effectiveDate;
 	}
 	$scope.calc = function() {
 		console.log($scope.waluty);

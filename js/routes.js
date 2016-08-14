@@ -4,7 +4,7 @@ a_app.config(function($routeProvider) {
 		templateUrl: "templates/main.htm",
 		controller: "mainCtrl"
 	})
-	.when("/side_nav", {
-		templateUrl: "templates/side_nav.htm"
+	.when("/info", {
+		templateUrl: "templates/info.htm"
 	});
 });

@@ -180,6 +180,7 @@ select, input, textarea {
 	transition: 0.5s;
 	font-size: 16px;
 	padding: 8px;
+	outline: 0;
 }
 select:focus, input:focus, textarea:focus {
 	border-bottom: 2px solid #1e88e5;
@@ -187,6 +188,18 @@ select:focus, input:focus, textarea:focus {
 #wynik {
 	font-size: 34px;
 	text-align: center;
+	margin: 0;
 	margin-top: 34px;
 	color: rgba(0, 0, 0, 0.87);
+}
+.content h1 {
+	font-size: 26px;
+	color: rgba(0, 0, 0, 0.87);
+	margin-bottom: 1em;
+}
+.content p {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.87);
+	line-height: 1.1em;
+	margin-bottom: 0.5em;
 }
